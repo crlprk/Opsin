@@ -1,0 +1,9 @@
+[input]
+# where to read your source images
+dir = "D:/DCIM"
+# where to write your processed images
+output = "processed_output"
+
+[lut]
+# the filename of the .cube LUT you want to use
+selected = "SONY_CYBERSHOT-DSC-WX5.CUBE"
