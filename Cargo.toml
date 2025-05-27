@@ -11,3 +11,9 @@ rayon = "1.10.0"
 serde = { version = "1.0.219", features = ["derive"] }
 toml = "0.8.22"
 walkdir = "2.5.0"
+
+[[bin]]
+name = "opsin"
+path = "src/main.rs"
+# suppress the console on Windows:
+windows-subsystem = "windows"
