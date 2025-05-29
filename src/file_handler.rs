@@ -87,7 +87,7 @@ pub fn process_images(
         {
             match ext.as_str() {
                 "jpg" | "jpeg" | "png" => {
-                    // Create backup copy with "_RAW" suffix
+                    // Create backup copy with "RAW_" prefix
                     let orig_name = format!("{}_RAW", rel.file_name().unwrap().to_string_lossy());
                     let orig_out = out_path.with_file_name(orig_name);
                     fs::copy(path, &orig_out).unwrap();
